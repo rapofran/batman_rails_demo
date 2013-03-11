@@ -1,0 +1,8 @@
+.page-header
+  %h1{"data-bind" => "post.title"}
+.hero-unit
+  %p{"data-bind" => "post.content"}
+.well
+  %a.btn.btn-primary{"data-route" => 'routes.posts[post].edit'}Edit
+  %a.btn{'data-route' => 'routes.posts'}Back
+  %a.btn.destroy.btn-danger{"data-event-click" => 'destroy'} Destroy
